@@ -5,16 +5,16 @@ class Node:
         self.left = None
         self.right = None
 
-def lca(root, n1, n2):
+def lca(root, node1, node2):
 
     if root is None:
         return None
 
-    if root.parent == n1 or root.parent == n2:
+    if root.parent == node1 or root.parent == node2:
         return root
 
-    left_lca = lca(root.left, n1, n2)
-    right_lca = lca(root.right, n1, n2)
+    left_lca = lca(root.left, node1, node2)
+    right_lca = lca(root.right, node1, node2)
 
     if left_lca and right_lca:
         return root
