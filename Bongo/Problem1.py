@@ -1,10 +1,4 @@
 
-def print_depth(data, start=0):
-    for key, value in data.items():
-        print(key, start + 1)
-        if isinstance(value, dict):
-            print_depth(value, start=start+1)
-
 def print_depth(data):
     stack = [(data, list(data.keys()))]
     while stack:
@@ -18,14 +12,18 @@ def print_depth(data):
                  stack.append((v, list(v.keys())))
                  break
 
-a = {
-    "key1": 1,
-    "key2": {
-        "key3": 1,
-        "key4": {
-            "key5": 4
+def inputDict():
+    a = {
+        "key1": 1,
+        "key2": {
+            "key3": 1,
+            "key4": {
+                "key5": 4
+                }
             }
         }
-    }
+    return a
 
-print_depth(a)
+if __name__ == '__main__':
+    a=inputDict()
+    print_depth(a)
