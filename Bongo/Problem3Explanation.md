@@ -1,6 +1,6 @@
 # Python-Code-Test
 
-####Algorithm:
+#### Algorithm:
 
 1) Create a recursive function that takes a node and the two values node1 and node2.
 2) If the current node is null then return none value as lca.
@@ -10,7 +10,7 @@
 6) If left and right subtree both exist then return the current node as lca.
 7) Return left subtree as lca if left subtree exist otherwise return right subtree as lca.
 
-####Complexity Analysis:
+#### Complexity Analysis:
 
 Time Complexity: Θ(n).
 The time Complexity of the solution is Θ(n), where n is the height of the tree.
