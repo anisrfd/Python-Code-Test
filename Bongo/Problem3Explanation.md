@@ -14,5 +14,6 @@
 
 Time Complexity: Θ(n).
 The time Complexity of the solution is Θ(n), where n is the height of the tree.
+
 Space Complexity: O(1).
 If recursive stack space is ignored, the space complexity of the above solution is constant.
